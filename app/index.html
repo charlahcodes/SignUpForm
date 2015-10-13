@@ -3,19 +3,37 @@
 <head>
   <title>App Sign-up!</title>
   <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="Header"><span class="title">Sign Up For My Web App</span></div>
-<div class="container">
+<div class="wrapper">
   
+  <div class="Header">
+    <span class="title">Sign Up For My Web App</span>
+  </div>
+  
+  <div class="container">
+    
+  </div>
+
+  <div class="footer">
+    <button>Submit Form</button>
+  </div>
+
 </div>
+<script type="text/template" id="itemTemplate">
+  <div class="input">
+    <input type='<%= type %>' id='<%= id %>' placeholder='<%= label %>'><i class="<%= icon %>"></i>
+  </div>
+</script>
+<script type="text/template" id="itemSelector">
+  <select name="language" id="LangSelect">
 
-<div class="footer"><button>Submit Form</button></div>
-
-
-<script type="text/template" id="itemtemplate">
-  <input type=<%= type %> id=<%= id%> placeholder=<%= label %>
+  </select>
+</script>
+<script type='text/template' id='selectOption'>
+  <option value='<%= value %>'>>'<%= label %>'</object>
 </script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
